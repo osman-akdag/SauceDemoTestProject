@@ -28,7 +28,6 @@ public class BasePage {
     }
 
     public String getText(By locator) {
-        System.out.println(find(locator).getText());
         return find(locator).getText();
     }
 
