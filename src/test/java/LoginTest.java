@@ -25,7 +25,7 @@ public class LoginTest extends BaseTest {
         basePage = new BasePage(driver);
         loginPage = new LoginPage(driver);
         homePage = new HomePage(driver);
-        loginHelper = new LoginHelper(driver, basePage, loginPage, homePage);
+        loginHelper = new LoginHelper(driver);
     }
 
     @Test

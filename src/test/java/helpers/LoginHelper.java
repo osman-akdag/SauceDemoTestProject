@@ -12,11 +12,11 @@ public class LoginHelper {
     LoginPage loginPage;
     HomePage homePage;
 
-    public LoginHelper(WebDriver driver, BasePage basePage, LoginPage loginPage, HomePage homePage) {
+    public LoginHelper(WebDriver driver) {
         this.driver = driver;
-        this.basePage = basePage;
-        this.loginPage = loginPage;
-        this.homePage = homePage;
+        this.basePage = new BasePage(driver);
+        this.loginPage = new LoginPage(driver);
+        this.homePage = new HomePage(driver);
     }
 
     private void login(String username,String password){
